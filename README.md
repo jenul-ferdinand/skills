@@ -13,8 +13,8 @@ In Claude Code, add the marketplace once, then install what you want:
 
 ```
 /plugin marketplace add jenul-ferdinand/skills
-/plugin install etoro-skill@jenul-skills
-/plugin install cashew-skill@jenul-skills
+/plugin install etoro-skill@jenul-ferdinand
+/plugin install cashew-skill@jenul-ferdinand
 ```
 
 For other agents, install a skill straight from its repo, for example `npx skills add jenul-ferdinand/etoro-skill -g`. Each skill's README covers its setup.
