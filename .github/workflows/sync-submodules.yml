@@ -1,0 +1,27 @@
+name: Sync skill submodules
+
+# Points plugins/* at each skill repo's latest commit. Hourly, because a push
+# in another repo can only trigger this with a token stored in that repo.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: true
+      - name: Bump submodules
+        run: |
+          git submodule update --remote
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: bump skill submodules"
+          git push
