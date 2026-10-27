@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync-submodules
+
 jobs:
   sync:
     runs-on: ubuntu-latest
