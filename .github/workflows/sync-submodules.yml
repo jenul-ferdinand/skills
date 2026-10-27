@@ -1,7 +1,5 @@
 name: Sync skill submodules
 
-# Points plugins/* at each skill repo's latest commit. Each skill repo sends a
-# skill-updated dispatch on push to main (its notify-skills workflow).
 on:
   repository_dispatch:
     types: [skill-updated]
