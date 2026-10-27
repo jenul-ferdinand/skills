@@ -1,0 +1,6 @@
+[submodule "plugins/cashew-skill"]
+	path = plugins/cashew-skill
+	url = https://github.com/jenul-ferdinand/cashew-skill.git
+[submodule "plugins/etoro-skill"]
+	path = plugins/etoro-skill
+	url = https://github.com/jenul-ferdinand/etoro-skill.git

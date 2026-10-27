@@ -1,0 +1,24 @@
+{
+  "name": "jenul-skills",
+  "description": "Agent skills by Jenul Ferdinand: log spending into Cashew and read your eToro portfolio.",
+  "owner": {
+    "name": "Jenul Ferdinand",
+    "url": "https://github.com/jenul-ferdinand"
+  },
+  "plugins": [
+    {
+      "name": "cashew-skill",
+      "displayName": "Cashew Budget Logger (unofficial)",
+      "description": "Log expenses and income into the Cashew budgeting app on Android from plain text or bank statements.",
+      "category": "personal-finance",
+      "source": { "source": "github", "repo": "jenul-ferdinand/cashew-skill" }
+    },
+    {
+      "name": "etoro-skill",
+      "displayName": "eToro Portfolio (unofficial)",
+      "description": "Reads your live eToro balance, holdings and P/L before answering questions about your investments. Read-only.",
+      "category": "personal-finance",
+      "source": { "source": "github", "repo": "jenul-ferdinand/etoro-skill" }
+    }
+  ]
+}
