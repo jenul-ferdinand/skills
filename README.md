@@ -12,7 +12,7 @@
 In Claude Code, add the marketplace once, then install what you want:
 
 ```
-/plugin marketplace add jenul-ferdinand/agent-skills
+/plugin marketplace add jenul-ferdinand/skills
 /plugin install etoro-skill@jenul-skills
 /plugin install cashew-skill@jenul-skills
 ```
